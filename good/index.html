@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>资源web</title>
+  <link rel="shortcut icon" href="./img/favicon (2).ico" type="image/x-icon">
+</head>
+<style>
+  html {
+    background-image: url(./img/bk.jpg);
+    background-size: cover;
+    padding: 20px;
+    /* background-repeat: no-repeat; */
+  }
+
+  h3 {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .list {
+    display: flex;
+  }
+
+  .box {
+    width: 400px;
+    height: 100px;
+    border: solid 2px blanchedalmond;
+    background-color: aliceblue;
+
+    margin-right: 40px;
+  }
+
+  .box:hover {
+    border: solid 2px blanchedalmond;
+    width: 400px;
+    background-color: rgb(178, 182, 185);
+    cursor: pointer;
+  }
+
+  img {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  a {
+    text-align: center;
+    vertical-align: middle;
+  }
+</style>
+
+<body>
+  <h3>电影</h3>
+  <div class="list">
+    <div class="box ">
+      <img src="./img/cq.png" alt="">
+      <a href="https://www.chuanqi365.com/">传奇影院</a>
+    </div>
+    <div class="box ">
+      <img src="./img/libvio.png" alt="">
+      <a href="https://libvio.in/">LIBVIO</a>
+    </div>
+    <div class="box ">
+      <img src="http://cupfoxyy.com//upload/site/20240818-1/8e26417aa0aad6f758047c6a9d10902b.png" alt="">
+      <a href="  https://www.cupfoxyy.com/">茶杯狐</a>
+    </div>
+
+  </div>
+
+  <h3>电影下载</h3>
+  <div class="box ">
+    <img src="./img/屏幕截图 2024-11-07 085104.png" alt="">
+    <a href="https://www.yinfans.net/topic/4k">音范丝 | 4K蓝光电影资源下载</a>
+  </div>
+  <h3>游戏</h3>
+  <div class="box ">
+    <img src="./img/屏幕截图 2024-11-07 092722.png" alt="">
+    <a href="  https://www.gotvg.com/">游聚网</a>
+  </div>
+
+
+
+
+  <script>
+    const div = document.querySelectorAll('.box')
+
+
+    for (let i = 0; i < div.length; i++) {
+      div[i].addEventListener('click', function () {
+        div[i].childNodes[3].click();
+      })
+    }
+    //   <div class="box ">
+    //   <img src="./img/屏幕截图 2024-11-07 092722.png" alt="">
+    //   <a href="  https://www.gotvg.com/">游聚网</a>
+    // </div>
+
+  </script>
+</body>
+
+</html>
